@@ -1,0 +1,75 @@
+// Gradiente de fundo e centralização total
+ion-content {
+  --background: linear-gradient(to bottom, #3880ff, #3dc2ff);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.logo-container {
+  margin-bottom: 20px;
+
+  ion-icon {
+    font-size: 80px;
+    color: #3880ff;
+  }
+}
+
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// Títulos do card
+h2 {
+  margin-bottom: 5px;
+  color: #222;
+}
+
+p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+// Inputs com borda arredondada
+.input-item {
+  --border-radius: 8px;
+  --background: #f0f0f0;
+  --padding-start: 15px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+// Botão com design moderno
+.login-button {
+  --background: #3880ff;
+  --background-hover: #3171e0;
+  --border-radius: 8px;
+  --box-shadow: 0px 4px 6px rgba(56, 128, 255, 0.3);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// Responsividade extra para telas pequenas
+@media screen and (max-width: 400px) {
+  .login-card {
+    width: 95%;
+  }
+
+  .logo-container ion-icon {
+    font-size: 60px;
+  }
+}

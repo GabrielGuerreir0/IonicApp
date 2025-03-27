@@ -1,0 +1,190 @@
+/* Estilo geral da página */
+ion-content {
+  --background: #f0f0f5;
+  padding: 20px;
+}
+
+/* Container para a lista de tarefas */
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Card de tarefa */
+.task-card {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.task-card.completed {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.task-card .task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card .task-info p {
+  margin: 0;
+}
+
+.task-card .task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-card .task-actions ion-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.task-card .task-actions ion-icon:hover {
+  color: #ffeb3b;
+}
+
+/* Formulário de tarefa */
+.task-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.task-form ion-item {
+  margin-bottom: 15px;
+}
+
+.task-form ion-button {
+  background: #ff7e5f;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.task-form ion-button:hover {
+  background: #feb47b;
+}
+
+/* Barra de progresso */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Estilos para botões de concluir e excluir */
+.task-card .task-actions ion-icon.complete {
+  color: #4caf50;
+}
+
+.task-card .task-actions ion-icon.delete {
+  color: #f44336;
+}
+
+/* Estilo para o modal */
+ion-modal {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  ion-toolbar {
+    border-radius: 10px;
+  }
+  ion-header {
+    border-radius: 10px 10px 0px 0px;
+  }
+  ion-item {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    --background: transparent !important;
+    color: black;
+  }
+  ion-datetime {
+    border-radius: 10px;
+  }
+  ion-input {
+    border-bottom: 1px solid #000;
+  }
+}
+
+ion-modal .modal-header {
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+ion-modal .modal-content {
+  padding: 20px;
+}
+
+ion-modal .modal-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+.ion-delegate-host {
+  --border-radius: 10px;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 600px) {
+  .task-card {
+    font-size: 14px;
+  }
+
+  .task-form ion-item {
+    font-size: 14px;
+  }
+
+  .task-form ion-button {
+    font-size: 14px;
+  }
+
+  .tasks-container {
+    gap: 10px;
+  }
+}
+/* Estilo do botão flutuante */
+ion-fab-button {
+  --background: #3880ff;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+}
+
+ion-fab-button:hover {
+  --background: #3171e0;
+}
+
+ion-tab-bar {
+  background-color: #fff;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ion-tab-button {
+  --color-selected: #3880ff;
+}
+
+ion-tab-button:focus {
+  outline: none;
+}
+
+ion-fab-button {
+  --background: #3880ff;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}

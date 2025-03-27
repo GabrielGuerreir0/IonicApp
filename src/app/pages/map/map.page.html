@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Localização e Mapas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="map-content">
+  <!-- Introdução -->
+  <section class="intro-section">
+    <ion-card class="intro-card">
+      <ion-card-header>
+        <ion-card-title>Explore o Poder do GPS</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>O Ionic oferece uma poderosa integração com o GPS para permitir rastreamento de localização e a exibição de mapas, permitindo construir aplicações de navegação e localização precisas.</p>
+        <ion-button expand="full" color="primary" (click)="getCurrentLocation()">
+          <ion-icon slot="start" name="location-outline"></ion-icon>
+          Obter Minha Localização
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <!-- Mapa -->
+  <section class="map-section">
+    <ion-card>
+      <ion-card-content>
+        <div id="map" style="height: 400px;"></div> <!-- Mapa será exibido aqui -->
+      </ion-card-content>
+    </ion-card>
+  </section>
+</ion-content>
+
+<ion-tab-bar slot="fixed">
+  <ion-tab-button (click)="navList()" tab="tasks">
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <ion-label>Tarefas</ion-label>
+  </ion-tab-button>
+  <ion-tab-button tab="tasks">
+    <ion-icon name="map"></ion-icon>
+    <ion-label>Mapa</ion-label>
+  </ion-tab-button>
+  <ion-tab-button (click)="navIonic()" tab="tasks">
+    <ion-icon name="logo-ionic"></ion-icon>
+    <ion-label>Ionic</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

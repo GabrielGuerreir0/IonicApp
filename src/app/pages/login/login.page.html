@@ -1,0 +1,27 @@
+<ion-content class="login-container">
+
+  <div class="container">
+
+    <div class="login-card">
+      <div class="logo-container">
+        <ion-icon name="logo-ionic"></ion-icon>
+      </div>
+      <h2>Bem-vindo</h2>
+      <p>Faça login para continuar</p>
+
+      <form (submit)="login()">
+        <ion-item class="input-item" lines="none">
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input type="email" [(ngModel)]="email" name="email" label-placement="stacked" required></ion-input>
+        </ion-item>
+
+        <ion-item class="input-item" lines="none">
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password" label-placement="stacked" required></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" type="submit" class="login-button" (onclick)="login()">Entrar</ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

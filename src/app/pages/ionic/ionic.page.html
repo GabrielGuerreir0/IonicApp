@@ -1,0 +1,132 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Página Inicial - Ionic Framework</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="main-content">
+
+  <!-- Introdução -->
+  <section class="intro-section">
+    <ion-card class="intro-card">
+      <ion-card-header>
+        <ion-card-title class="intro-title">Bem-vindo ao Ionic!</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="intro-text">Ionic é um framework poderoso para criar aplicativos móveis e web com uma experiência nativa. Explore seus recursos incríveis!</p>
+        <ion-button expand="full" color="primary" href="https://ionicframework.com/docs" target="_blank">
+          <ion-icon slot="start" name="document-text-outline"></ion-icon>
+          Acesse a Documentação
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <!-- Componentes do Ionic -->
+  <section class="components-section">
+    <h2 class="section-title">Componentes Principais</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="4">
+          <ion-card class="component-card">
+            <ion-card-header>
+              <ion-card-title>Botões</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon name="hand-left-outline" class="component-icon"></ion-icon>
+              <p>Botões customizáveis para suas necessidades.</p>
+              <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs/api/button" target="_blank">
+                <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
+                Ver Exemplos
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="4">
+          <ion-card class="component-card">
+            <ion-card-header>
+              <ion-card-title>Cards</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon name="card-outline" class="component-icon"></ion-icon>
+              <p>Exiba conteúdo de forma compacta e organizada.</p>
+              <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs/api/card" target="_blank">
+                <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
+                Ver Exemplos
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="4">
+          <ion-card class="component-card">
+            <ion-card-header>
+              <ion-card-title>Formulários</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon name="create-outline" class="component-icon"></ion-icon>
+              <p>Crie formulários intuitivos e responsivos.</p>
+              <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs/api/input" target="_blank">
+                <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
+                Ver Exemplos
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <!-- Links úteis -->
+  <section class="resources-section">
+    <h2 class="section-title">Links Úteis</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <ion-card class="resource-card">
+            <ion-card-header>
+              <ion-card-title>Documentação Oficial</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon name="book-outline" class="resource-icon"></ion-icon>
+              <p>Acesse a documentação completa e comece a aprender.</p>
+              <ion-button expand="full" color="primary" href="https://ionicframework.com/docs" target="_blank">
+                Acessar
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="6">
+          <ion-card class="resource-card">
+            <ion-card-header>
+              <ion-card-title>GitHub do Ionic</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-icon name="logo-github" class="resource-icon"></ion-icon>
+              <p>Confira o código-fonte e contribua para o projeto no GitHub.</p>
+              <ion-button expand="full" color="primary" href="https://github.com/ionic-team/ionic" target="_blank">
+                Visitar GitHub
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+</ion-content>
+<ion-tab-bar slot="fixed">
+  <ion-tab-button (click)="navList()" tab="tasks">
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <ion-label>Tarefas</ion-label>
+  </ion-tab-button>
+  <ion-tab-button (click)="navMap()" tab="tasks">
+    <ion-icon name="map"></ion-icon>
+    <ion-label>Mapa</ion-label>
+  </ion-tab-button>
+  <ion-tab-button tab="tasks">
+    <ion-icon name="logo-ionic"></ion-icon>
+    <ion-label>ionic</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
