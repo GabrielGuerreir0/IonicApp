@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #3880ff;
+  --secondary-color: #3dc2ff;
+}
 /* Estilo geral da página */
 ion-content {
   --background: #f0f0f5;
@@ -132,6 +136,7 @@ ion-modal .modal-header {
 
 ion-modal .modal-content {
   padding: 20px;
+  --background: #3171e0;
 }
 
 ion-modal .modal-footer {

@@ -1,11 +1,10 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>Página Inicial - Ionic Framework</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="main-content">
-
   <!-- Introdução -->
   <section class="intro-section">
     <ion-card class="intro-card">
@@ -14,7 +13,7 @@
       </ion-card-header>
       <ion-card-content>
         <p class="intro-text">Ionic é um framework poderoso para criar aplicativos móveis e web com uma experiência nativa. Explore seus recursos incríveis!</p>
-        <ion-button expand="full" color="primary" href="https://ionicframework.com/docs" target="_blank">
+        <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs" target="_blank">
           <ion-icon slot="start" name="document-text-outline"></ion-icon>
           Acesse a Documentação
         </ion-button>
@@ -35,7 +34,7 @@
             <ion-card-content>
               <ion-icon name="hand-left-outline" class="component-icon"></ion-icon>
               <p>Botões customizáveis para suas necessidades.</p>
-              <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs/api/button" target="_blank">
+              <ion-button expand="full" color="primary" href="https://ionicframework.com/docs/api/button" target="_blank">
                 <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
                 Ver Exemplos
               </ion-button>
@@ -51,7 +50,7 @@
             <ion-card-content>
               <ion-icon name="card-outline" class="component-icon"></ion-icon>
               <p>Exiba conteúdo de forma compacta e organizada.</p>
-              <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs/api/card" target="_blank">
+              <ion-button expand="full" color="primary" href="https://ionicframework.com/docs/api/card" target="_blank">
                 <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
                 Ver Exemplos
               </ion-button>
@@ -67,7 +66,7 @@
             <ion-card-content>
               <ion-icon name="create-outline" class="component-icon"></ion-icon>
               <p>Crie formulários intuitivos e responsivos.</p>
-              <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs/api/input" target="_blank">
+              <ion-button expand="full" color="primary" href="https://ionicframework.com/docs/api/input" target="_blank">
                 <ion-icon slot="start" name="arrow-forward-circle-outline"></ion-icon>
                 Ver Exemplos
               </ion-button>
@@ -91,7 +90,7 @@
             <ion-card-content>
               <ion-icon name="book-outline" class="resource-icon"></ion-icon>
               <p>Acesse a documentação completa e comece a aprender.</p>
-              <ion-button expand="full" color="primary" href="https://ionicframework.com/docs" target="_blank">
+              <ion-button expand="full" color="secondary" href="https://ionicframework.com/docs" target="_blank">
                 Acessar
               </ion-button>
             </ion-card-content>
@@ -105,7 +104,7 @@
             <ion-card-content>
               <ion-icon name="logo-github" class="resource-icon"></ion-icon>
               <p>Confira o código-fonte e contribua para o projeto no GitHub.</p>
-              <ion-button expand="full" color="primary" href="https://github.com/ionic-team/ionic" target="_blank">
+              <ion-button expand="full" color="secondary" href="https://github.com/ionic-team/ionic" target="_blank">
                 Visitar GitHub
               </ion-button>
             </ion-card-content>
@@ -114,9 +113,9 @@
       </ion-row>
     </ion-grid>
   </section>
-
 </ion-content>
-<ion-tab-bar slot="fixed">
+
+<ion-tab-bar slot="fixed" color="primary">
   <ion-tab-button (click)="navList()" tab="tasks">
     <ion-icon name="checkmark-circle"></ion-icon>
     <ion-label>Tarefas</ion-label>
@@ -127,6 +126,6 @@
   </ion-tab-button>
   <ion-tab-button tab="tasks">
     <ion-icon name="logo-ionic"></ion-icon>
-    <ion-label>ionic</ion-label>
+    <ion-label>Ionic</ion-label>
   </ion-tab-button>
 </ion-tab-bar>
